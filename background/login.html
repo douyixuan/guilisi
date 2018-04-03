@@ -18,20 +18,24 @@
     <script src="js/respond.min.js"></script>
     <![endif]-->
 </head>
-
+<script language="text/javascript">
+</script>
 <body class="login-body">
 
+
+
 <div class="container">
-<!-- action="index.html" -->
-    <form class="form-signin" id="login">
+<!--    name="login" action="index.html" onsubmit="return check(this.form)"-->
+    
+    <form class="form-signin" method="post"  onsubmit="return fillcheck(this);" name="login-form">
         <div class="form-signin-heading text-center">
             <h1 class="sign-title">登录</h1>
             <img src="images/login-logo.png" alt=""/>
         </div>
         <div class="login-wrap">
-            <input type="text" class="form-control" placeholder="用户名" autofocus>
-            <input type="password" class="form-control" placeholder="密码">
-
+            <input type="text" class="form-control" name="username" placeholder="用户名" autofocus>
+            <input type="password" class="form-control" name="password" placeholder="密码">
+            
             <button class="btn btn-lg btn-login btn-block" type="submit" >
                 <i class="fa fa-check"></i>
             </button>
@@ -82,13 +86,9 @@
 <script src="js/jquery-1.10.2.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/modernizr.min.js"></script>
-<script>
-    document.getElementById('login').onClick() {
-        //window.location.href="./login.html";
-        Authentic();//validation
-        
-        
-    }
+<script src="js/login.js"></script>
+<script type="text/javascript">
+
 </script>
 </body>
 </html>
