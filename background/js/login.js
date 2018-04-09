@@ -9,10 +9,6 @@ function fillcheck(f) {
 			flag = true;
 		}
 	}
-	//alert(flag);
-	
-	//add some no users tips
-	
 	return flag;
 }
 
@@ -31,8 +27,10 @@ function valid(f) {
 		timeout:2000,
 		cache:true,
 		success: function (data) {
+			//alert(data);
 			if(data == "uptosky") window.location.href="dashboard.html";
 			else alert("账号或密码错误");
 		}
 	});
+	return false;
 }

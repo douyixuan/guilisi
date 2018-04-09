@@ -7,7 +7,7 @@
     <meta name="author" content="ThemeBucket">
     <link rel="shortcut icon" href="#" type="image/png">
 
-    <title>Registration</title>
+    <title>注册</title>
 
     <link href="css/style.css" rel="stylesheet">
     <link href="css/style-responsive.css" rel="stylesheet">
@@ -23,50 +23,53 @@
 
 <div class="container">
 
-    <form class="form-signin" action="index.html">
+    <form class="form-signin" target="hideIframe" method="post" onsubmit="return sub(this);">
         <div class="form-signin-heading text-center">
-            <h1 class="sign-title">Registration</h1>
+            <h1 class="sign-title">注册</h1>
             <img src="images/login-logo.png" alt=""/>
         </div>
 
 
         <div class="login-wrap">
-            <p>Enter your personal details below</p>
-            <input type="text" autofocus="" placeholder="Full Name" class="form-control">
-            <input type="text" autofocus="" placeholder="Address" class="form-control">
-            <input type="text" autofocus="" placeholder="Email" class="form-control">
-            <input type="text" autofocus="" placeholder="City/Town" class="form-control">
+            <p> 输入登录信息（必填）</p>
+            <input type="text" autofocus="" name="username" placeholder="用户名" class="form-control">
+            <input type="password" name="password" placeholder="密码" class="form-control">
+            <input type="password" name="password2" placeholder="重复密码" class="form-control">
+            
+            <p>填写以下个人信息（可选）</p>
+            <input type="text" name="nama" autofocus="" placeholder="名字" class="form-control">
+            <input type="text" name="address" autofocus="" placeholder="地址" class="form-control">
+            <input type="text" name="email" autofocus="" placeholder="邮箱" class="form-control">
+            
             <div class="radios">
                 <label for="radio-01" class="label_radio col-lg-6 col-sm-6">
-                    <input type="radio" checked="" value="1" id="radio-01" name="sample-radio"> Male
+                    <input type="radio" checked="" value="1" id="radio-01" name="sample-radio">  男
                 </label>
                 <label for="radio-02" class="label_radio col-lg-6 col-sm-6">
-                    <input type="radio" value="1" id="radio-02" name="sample-radio"> Female
+                    <input type="radio" value="1" id="radio-02" name="sample-radio">  女
                 </label>
             </div>
-
-            <p> Enter your account details below</p>
-            <input type="text" autofocus="" placeholder="User Name" class="form-control">
-            <input type="password" placeholder="Password" class="form-control">
-            <input type="password" placeholder="Re-type Password" class="form-control">
-            <label class="checkbox">
-                <input type="checkbox" value="agree this condition"> I agree to the Terms of Service and Privacy Policy
-            </label>
+                        
             <button type="submit" class="btn btn-lg btn-login btn-block">
                 <i class="fa fa-check"></i>
             </button>
-
+            
+            <!--   服务条款
+            <label class="checkbox">
+                <input type="checkbox" value="agree this condition">同意服务条款和隐私政策
+            </label>
+            -->
             <div class="registration">
-                Already Registered.
+                已注册？
                 <a href="login.html" class="">
-                    Login
+                    登陆
                 </a>
             </div>
 
         </div>
 
     </form>
-
+    <iframe name="hideIframe" hidden></iframe>
 </div>
 
 
@@ -77,6 +80,8 @@
 <script src="js/jquery-1.10.2.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/modernizr.min.js"></script>
+<script src="js/register.js"></script>
+<script></script>
 
 </body>
 </html>

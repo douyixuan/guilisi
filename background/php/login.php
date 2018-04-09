@@ -1,11 +1,14 @@
 <?php
 	$zhanghao=$_POST["username"];
 	$mima=$_POST["password"];
-	echo $text;
+	//echo $text;
+	/*
 	$servername = "...";
 	$username = "..";
 	$password = "...";
 	$db = "...";
+	*/
+	
 	
 	// 创建连接
 	$conn = mysqli_connect($servername, $username, $password, $db);
@@ -14,7 +17,7 @@
 	if (!$conn) {
 		die("Connection failed: " . mysqli_connect_error());
 	}
-	//echo "连接成功\n";	// some code  username, password
+	//echo aler("连接成功\n");	// some code  username, password
 	
 	//select db
 		/*if (!mysqli_select_db($conn,'guilisi')) {
@@ -57,6 +60,5 @@
 	//var_dump($log);
 	//print $log->{"password"};
 	echo $mima==$arr[$zhanghao]?"uptosky":"downtoground";
-	//response.write("</table>");
 	mysqli_close($conn);
 ?>
