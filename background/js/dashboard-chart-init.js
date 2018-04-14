@@ -2,10 +2,10 @@
 Morris.Donut({
     element: 'graph-donut',
     data: [
-        {value: 40, label: 'New Visit', formatted: 'at least 70%' },
-        {value: 30, label: 'Unique Visits', formatted: 'approx. 15%' },
-        {value: 20, label: 'Bounce Rate', formatted: 'approx. 10%' },
-        {value: 10, label: 'Up Time', formatted: 'at most 99.99%' }
+        {value: 40, label: '会员活跃度', formatted: '至少 70%' },
+        {value: 30, label: '新顾客活跃度', formatted: 'approx. 15%' },
+        {value: 20, label: '老顾客活跃度', formatted: 'approx. 10%' },
+        {value: 10, label: '亲朋活跃度', formatted: 'at most 99.99%' }
     ],
     backgroundColor: false,
     labelColor: '#fff',
@@ -114,5 +114,5 @@ $(function() {
         },
         colors: ["#5abcdf", "#ff8673"]
     };
-    var plot = $.plot($("#main-chart #main-chart-container"), data, options);
+    //var plot = $.plot($("#main-chart #main-chart-container"), data, options);
 });
