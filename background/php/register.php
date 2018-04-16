@@ -11,7 +11,10 @@
 		$password = "...";
 		$db = "...";
 		*/
-			
+	$servername = "127.0.0.1";
+	$username = "guilisi";
+	$password = "SYm3t5i4zr36tFRX";
+	$db = "guilisi";
 	// 创建连接
 	$conn = mysqli_connect($servername, $username, $password, $db);
 	 
@@ -23,7 +26,8 @@
 	
 	//set charset
 	mysqli_set_charset($conn,'utf8');
-		
+	
+	
 	// 判断用户名是否提交过
 	$sql ="select * from users where username ='".$zhanghao."'";
 	$result = mysqli_fetch_array(mysqli_query($conn, $sql));

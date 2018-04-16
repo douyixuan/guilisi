@@ -85,6 +85,9 @@ var EditableTable = function () {
                 var data = {};
                 var aData = oTable.fnGetData(nRow);
                 data["nama"]=aData[1];
+                data["coin"]=aData[2];
+                data["money"]=aData[3];
+                data["beizhu"]=aData[0];
                 data["operation"]=op;
                 $.ajax({
                     type: "POST",

@@ -5,9 +5,9 @@
 		$password = "...";
 		$db = "...";
 		*/
-	$servername = "193.112.54.129";
-	$username = "root";
-	$password = "261316";
+	$servername = "127.0.0.1";
+	$username = "guilisi";
+	$password = "SYm3t5i4zr36tFRX";
 	$db = "guilisi";		
 	// 创建连接
 	$conn = mysqli_connect($servername, $username, $password, $db);
